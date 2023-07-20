@@ -34,4 +34,8 @@ npm test
 ```bash
 # After serve, go to localhost:5173
 ```
+## Notice
+```bash
+#Don't forget to serve backend application at localhost:3000
+```
 
