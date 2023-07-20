@@ -1,0 +1,105 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+/* 
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+.text-color-gray {
+  color: var(--gray, #9d9d9d) !important;
+}
+.text-color-black-1 {
+  color: #000 !important;
+}
+.text-color-black-2 {
+  color: var(--black, #2d2d2d) !important;
+}
+.text-size-reg-14 {
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.text-size-reg-12 {
+  font-family: Roboto !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+.text-size-reg-10 {
+  font-family: Roboto !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+
+.text-size-bold-10 {
+  font-family: Roboto !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.text-size-bold-12 {
+  font-family: Roboto !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+.text-size-bold-18 {
+  font-family: Roboto !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+
+.text-size-bold-14 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.ml-8px {
+  margin-left: 8px;
+}
+.mt-10px {
+  margin-top: 10px;
+}
