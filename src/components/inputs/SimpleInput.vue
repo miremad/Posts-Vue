@@ -4,6 +4,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'SimpleInput',
   emits: ['onChange'],
+  props: {
+    title: Object as PropType<string>
+  },
   methods: {
     handleChange(e) {
       console.log(this.$refs.simpleInput.value)
@@ -17,7 +20,7 @@ export default defineComponent({
     <label
       for="exampleFormControlInput1"
       class="ml-8px form-label text-size-bold-12 text-color-black-1"
-      >Title</label
+      >{{ title }}</label
     >
     <input
       type="text"

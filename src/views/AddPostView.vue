@@ -21,9 +21,9 @@
     </div>
     <div class="col-8 mt-2">
       <form @submit.prevent="submit">
-        <SimpleInput @onChange="getTitle" />
-        <Textarea @onChange="getText" />
-        <TagsInput @onChange="getTags" />
+        <SimpleInput @onChange="getTitle" :title="'Title'" />
+        <Textarea @onChange="getText" :title="'Description'" />
+        <TagsInput @onChange="getTags" :title="'Tags'" />
       </form>
     </div>
   </div>

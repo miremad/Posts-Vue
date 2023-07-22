@@ -4,6 +4,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Textarea',
   emits: ['onChange'],
+  props: {
+    title: Object as PropType<string>
+  },
   methods: {
     handleChange(e) {
       console.log(this.$refs.textarea.value)
@@ -14,9 +17,9 @@ export default defineComponent({
 </script>
 <template>
   <div class="mb-3">
-    <label for="textarea-input" class="ml-8px form-label text-size-bold-12 text-color-black-1"
-      >Description</label
-    >
+    <label for="textarea-input" class="ml-8px form-label text-size-bold-12 text-color-black-1">{{
+      title
+    }}</label>
     <textarea
       ref="textarea"
       class="form-control custom-textarea"

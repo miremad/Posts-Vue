@@ -5,6 +5,9 @@ import { Button } from '../button'
 export default defineComponent({
   name: 'TagsInput',
   emits: ['onChange'],
+  props: {
+    title: Object as PropType<string>
+  },
   data() {
     return {
       tags: [],
@@ -42,9 +45,9 @@ export default defineComponent({
 </script>
 <template>
   <div class="mb-3">
-    <label for="tags-input" class="ml-8px form-label text-size-bold-12 text-color-black-1"
-      >Tags</label
-    >
+    <label for="tags-input" class="ml-8px form-label text-size-bold-12 text-color-black-1">{{
+      title
+    }}</label>
     <div class="position-relative">
       <input
         v-model="value"
